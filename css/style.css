@@ -260,10 +260,10 @@ content: "";
   z-index: -1;
   border-radius: 6px;
 }
-
 .aimage::after{
-    content: "";
+      content: "";
       position: absolute;
+
       width: 100%;
       left: 0;
       bottom: 0;
@@ -274,29 +274,28 @@ content: "";
       transition: all 0.6s ease 0s;
        visibility: hidden;
 }
-
 .aimage:hover::after
 {
 bottom: 0 ;
 visibility: visible;
 height: 100%;
 }
-
 .aimage .social-icons{
   font-size: 20px;
-      left: 30%;
-        position: absolute;
-      top: 100%;
-        z-index: 2;
-transition: all 0.6s ease 0s;
-        visibility: hidden;
+        left: 50%;
+          bottom: -10%;
+          position: absolute;
+          z-index: 2;
+          transition: all 0.6s ease 0s;
+          visibility: hidden;
+          transform: translate(-50%, -50%);
 }
 .aimage:hover.aimage .social-icons {
 visibility: visible;
-top: 50%;
+bottom: 38%;
 }
 .aimage .social-icons i{
-margin-right: 23px;
+margin-right: 20px;
 }
 .aimage .social-icons i:hover{
 color: var(--danger) !important;
@@ -522,16 +521,18 @@ left: 55%;
       cursor: pointer;
 }
 .bimg .fa-youtube{
-        position: absolute;
-        top: 30%;
-        left: 39%;
-        font-size: 70px;
-}
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 70px;
+      transform: translate(-50%, -40px);
+    }
 .bimg .fa-play{
 position: absolute;
-  top: 40%;
-  left: 47%;
+  top: 50%;
+  left: 50%;
   font-size: 29px;
+  transform: translate(-10px, -20px);
 }
 .blogcard{
   background-color: #fff;
@@ -632,9 +633,7 @@ color: var(--danger);
   .banner h1 {
       font-size: 45px;
   }
- /* .p-5{
-  padding-top: 50px !important;
- } */
+
     #about {
       padding: 0 !important;
       padding-top: 50px !important;
@@ -642,6 +641,7 @@ color: var(--danger);
     #services {
       padding: 0 !important;
       padding-top: 50px !important;
+      padding-bottom: 50px !important;
     }
     #portfolio{
       padding: 0 !important;
@@ -690,6 +690,7 @@ color: var(--danger);
         header {
           position: fixed;
           width: 100%;
+          z-index: 3;
         }
 
   .aimage {
@@ -744,8 +745,31 @@ color: var(--danger);
 @media (min-width: 768px) and (max-width: 992px){
 .poo-active{
   position: absolute;
-    bottom: 100%;
+    bottom: 100% !important;
     left: 50%;
+}
+.aimage .social-icons {
+    font-size: 25px;
+
+}
+.cardf::before {
+left: 50%;
+}
+
+.cardf::after {
+  left: 57%;
+}
+}
+@media (min-width: 992px) and (max-width: 1200px){
+.poo-active{
+  position: absolute;
+    /* bottom: 100% !important; */
+    left: 67%;
+}
+.aimage .social-icons {
+    font-size: 17px;
+
+
 }
 }
 
