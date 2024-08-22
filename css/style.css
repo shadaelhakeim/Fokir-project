@@ -260,25 +260,28 @@ content: "";
   z-index: -1;
   border-radius: 6px;
 }
+
 .aimage::after{
-content: "";
-position: absolute;
-width: 100%;
-left: 0;
-top: 381px;
-height: 0;
-  z-index: 1;
-  border-radius: 6px;
-  background: rgba(22, 22, 22, 0.616);
-transition: all 0.6s ease 0s;
-  visibility: hidden;
+    content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      height: 0%;
+      z-index: 1;
+      border-radius: 6px;
+      background: rgba(22, 22, 22, 0.616);
+      transition: all 0.6s ease 0s;
+       visibility: hidden;
 }
+
 .aimage:hover::after
 {
-top: 0 ;
+bottom: 0 ;
 visibility: visible;
 height: 100%;
 }
+
 .aimage .social-icons{
   font-size: 20px;
       left: 30%;
